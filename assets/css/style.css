@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.clear {
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
 html {
     font-family: Helvetica, arial, sans-serif;
 }
@@ -110,18 +118,17 @@ html {
     text-align: center;
 }
 
-#slider .text-heading{
+#slider .text-heading {
     font-weight: 500;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #slider .text-description {
     font-size: 15px;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
 #content {
-
 }
 
 #content .content-section {
@@ -131,14 +138,14 @@ html {
     margin-right: auto;
 }
 
-#content .section-heading{
+#content .section-heading {
     font-size: 30px;
     text-align: center;
     font-weight: 500;
     letter-spacing: 4px;
 }
 
-#content .section-sub-heading{
+#content .section-sub-heading {
     font-size: 15px;
     margin-top: 25px;
     text-align: center;
@@ -151,4 +158,70 @@ html {
     margin-top: 25px;
     text-align: justify;
     line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16xp;
+
+}
+
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
 }
