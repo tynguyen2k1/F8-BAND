@@ -1,16 +1,39 @@
-/* reset css */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* common */
 .clear {
     clear: both;
 }
 
 .text-white {
     color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -37,7 +60,6 @@ html {
 #nav > li {
     display: inline-block;
 }
-
 #nav li {
     position: relative;
 }
@@ -164,12 +186,6 @@ html {
     margin-top: 48px;
 }
 
-#content .member-item {
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
-}
-
 #content .member-name {
     font-size: 15px;
 }
@@ -227,13 +243,8 @@ html {
 
 /* Place */
 .places-list {
-    margin: 32px -8px 48px;
-}
-
-.place-item {
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-img {
@@ -265,7 +276,7 @@ html {
     margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn{
+.place-buy-btn {
     color: #fff;
     background-color: #000;
     text-decoration: none;
@@ -274,7 +285,7 @@ html {
     margin-top: 15px;
 }
 
-.place-buy-btn:hover{
+.place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
 }
