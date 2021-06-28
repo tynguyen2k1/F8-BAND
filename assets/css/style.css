@@ -68,6 +68,7 @@
 
 html {
     font-family: Helvetica, arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .mt-8 {
