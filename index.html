@@ -26,9 +26,9 @@
                             <i class="nav-arrow-down ti-angle-down"></i>
                         </a>
                         <ul class="subnav">
-                            <li><a href="">Merchandise</a></li>
-                            <li><a href="">Extras</a></li>
-                            <li><a href="">Media</a></li>
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -248,29 +248,35 @@
             </div>
         </div>
         <script>
-            var header = document.getElementById('header');
-            var mobileMenu = document.getElementById('mobile-menu');
+            var header = document.getElementById("header");
+            var mobileMenu = document.getElementById("mobile-menu");
             var headerHeight = header.clientHeight;
 
             // mobile menu
-            mobileMenu.onclick = function(){
+            mobileMenu.onclick = function () {
                 var isClosed = header.clientHeight === headerHeight;
                 if (isClosed) {
-                    header.style.height = 'auto';
-                }else{
+                    header.style.height = "auto";
+                } else {
                     header.style.height = null;
                 }
-            }
+            };
 
             // auto close when clicked menu mobile
             var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
             for (let i = 0; i < menuItems.length; i++) {
                 const menuItem = menuItems[i];
-                menuItem.onclick = function () {
-                    header.style.height = null;
-                }
+                menuItem.onclick = function (event) {
+                    var isParentMenu =
+                        this.nextElementSibling &&
+                        this.nextElementSibling.classList.contains("subnav");
+                    if (isParentMenu) {
+                        event.preventDefault();
+                    } else {
+                        header.style.height = null;
+                    }
+                };
             }
-
         </script>
     </body>
 </html>

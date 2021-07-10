@@ -79,10 +79,6 @@ html {
     margin-top: 16px !important;
 }
 
-/* main */
-#main {
-}
-
 #header {
     position: fixed;
     top: 0;
@@ -91,7 +87,6 @@ html {
     height: 46px;
     background-color: #000;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav,
@@ -206,9 +201,6 @@ html {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
-}
-
-#content {
 }
 
 #content .content-section {
