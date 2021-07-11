@@ -157,11 +157,11 @@ html {
     padding: 0 21px;
 }
 
-#header .mobile-menu-btn:hover{
+#header .mobile-menu-btn:hover {
     background-color: #ccc;
 }
 
-#header .mobile-menu-btn:hover .menu-icon{
+#header .mobile-menu-btn:hover .menu-icon {
     color: #000;
 }
 
@@ -236,7 +236,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -296,7 +296,7 @@ html {
 
 /* Place */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
